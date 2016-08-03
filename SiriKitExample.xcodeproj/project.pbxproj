@@ -71,7 +71,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BC3D86571D52A2750049FA0B /* SiriKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3D86571D52A2750049FA0B /* Loja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC3D865A1D52A2750049FA0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC3D865C1D52A2750049FA0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC3D865F1D52A2750049FA0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		BC3D86581D52A2750049FA0B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BC3D86571D52A2750049FA0B /* SiriKitExample.app */,
+				BC3D86571D52A2750049FA0B /* Loja.app */,
 				BC3D866B1D52A2750049FA0B /* SiriKitExampleTests.xctest */,
 				BC3D86761D52A2750049FA0B /* SiriKitExampleUITests.xctest */,
 				BCA4D3581D52B6BA00EA41F9 /* SiriKitExampleIntent.appex */,
@@ -259,7 +259,7 @@
 			);
 			name = SiriKitExample;
 			productName = SiriKitExample;
-			productReference = BC3D86571D52A2750049FA0B /* SiriKitExample.app */;
+			productReference = BC3D86571D52A2750049FA0B /* Loja.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BC3D866A1D52A2750049FA0B /* SiriKitExampleTests */ = {
@@ -638,7 +638,7 @@
 				INFOPLIST_FILE = SiriKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ciandt.enterprise.prototype.SiriKitExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Loja;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -653,7 +653,7 @@
 				INFOPLIST_FILE = SiriKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ciandt.enterprise.prototype.SiriKitExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Loja;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -810,6 +810,7 @@
 				BCA4D3751D52B6BA00EA41F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCA4D3771D52B6BA00EA41F9 /* Build configuration list for PBXNativeTarget "SiriKitExampleIntent" */ = {
 			isa = XCConfigurationList;
@@ -818,6 +819,7 @@
 				BCA4D3731D52B6BA00EA41F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

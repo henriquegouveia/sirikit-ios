@@ -25,7 +25,9 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>IntentsRestrictedWhileLocked</key>
-			<array/>
+			<array>
+				<string>INSendMessageIntent</string>
+			</array>
 			<key>IntentsSupported</key>
 			<array>
 				<string>INSendMessageIntent</string>
