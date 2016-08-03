@@ -51,6 +51,7 @@
 		BC3D867C1D52A2750049FA0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC3D868A1D52A50C0049FA0B /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Model/Item.swift; sourceTree = "<group>"; };
 		BC3D868C1D52A59E0049FA0B /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataProvider.swift; path = DataProvider/DataProvider.swift; sourceTree = "<group>"; };
+		BCA4D3531D52B5C400EA41F9 /* SiriKitExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriKitExample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		BC3D86591D52A2750049FA0B /* SiriKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				BCA4D3531D52B5C400EA41F9 /* SiriKitExample.entitlements */,
 				BC3D86891D52A2B40049FA0B /* DataProvider */,
 				BC3D86881D52A2AF0049FA0B /* Model */,
 				BC3D865A1D52A2750049FA0B /* AppDelegate.swift */,
@@ -217,6 +219,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = DC7P966WU6;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					BC3D866A1D52A2750049FA0B = {
 						CreatedOnToolsVersion = 8.0;
@@ -437,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriKitExample/SiriKitExample.entitlements;
 				DEVELOPMENT_TEAM = DC7P966WU6;
 				INFOPLIST_FILE = SiriKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -450,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriKitExample/SiriKitExample.entitlements;
 				DEVELOPMENT_TEAM = DC7P966WU6;
 				INFOPLIST_FILE = SiriKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -532,6 +541,7 @@
 				BC3D86811D52A2750049FA0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC3D86821D52A2750049FA0B /* Build configuration list for PBXNativeTarget "SiriKitExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +550,7 @@
 				BC3D86841D52A2750049FA0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC3D86851D52A2750049FA0B /* Build configuration list for PBXNativeTarget "SiriKitExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +559,7 @@
 				BC3D86871D52A2750049FA0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
