@@ -34,5 +34,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSSiriUsageDescription</key>
+	<string>Messages will be sent to Siri</string>
 </dict>
 </plist>

@@ -22,6 +22,8 @@
 		BCA4D36A1D52B6BA00EA41F9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA4D3681D52B6BA00EA41F9 /* MainInterface.storyboard */; };
 		BCA4D36E1D52B6BA00EA41F9 /* SiriKitExampleIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCA4D3611D52B6BA00EA41F9 /* SiriKitExampleIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BCA4D3711D52B6BA00EA41F9 /* SiriKitExampleIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCA4D3581D52B6BA00EA41F9 /* SiriKitExampleIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCA4D3791D52BB6C00EA41F9 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA4D3631D52B6BA00EA41F9 /* IntentsUI.framework */; };
+		BCA4D37B1D52BB6C00EA41F9 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA4D37A1D52BB6C00EA41F9 /* Intents.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,7 @@
 		BCA4D3661D52B6BA00EA41F9 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
 		BCA4D3691D52B6BA00EA41F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		BCA4D36B1D52B6BA00EA41F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA4D37A1D52BB6C00EA41F9 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA4D37B1D52BB6C00EA41F9 /* Intents.framework in Frameworks */,
+				BCA4D3791D52BB6C00EA41F9 /* IntentsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +229,7 @@
 		BCA4D3621D52B6BA00EA41F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BCA4D37A1D52BB6C00EA41F9 /* Intents.framework */,
 				BCA4D3631D52B6BA00EA41F9 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
