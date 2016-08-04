@@ -24,6 +24,12 @@
 		BCA4D3711D52B6BA00EA41F9 /* SiriKitExampleIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCA4D3581D52B6BA00EA41F9 /* SiriKitExampleIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BCA4D3791D52BB6C00EA41F9 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA4D3631D52B6BA00EA41F9 /* IntentsUI.framework */; };
 		BCA4D37B1D52BB6C00EA41F9 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA4D37A1D52BB6C00EA41F9 /* Intents.framework */; };
+		BCA4D37C1D52C07900EA41F9 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3D868C1D52A59E0049FA0B /* DataProvider.swift */; };
+		BCA4D37D1D52C07900EA41F9 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3D868C1D52A59E0049FA0B /* DataProvider.swift */; };
+		BCA4D37E1D52C07C00EA41F9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3D868A1D52A50C0049FA0B /* Item.swift */; };
+		BCA4D37F1D52C07D00EA41F9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3D868A1D52A50C0049FA0B /* Item.swift */; };
+		BCA4D3801D52C8AA00EA41F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3D86611D52A2750049FA0B /* Assets.xcassets */; };
+		BCA4D3811D52C8AA00EA41F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3D86611D52A2750049FA0B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -433,6 +439,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA4D3801D52C8AA00EA41F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +447,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA4D3811D52C8AA00EA41F9 /* Assets.xcassets in Resources */,
 				BCA4D36A1D52B6BA00EA41F9 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +486,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA4D37C1D52C07900EA41F9 /* DataProvider.swift in Sources */,
+				BCA4D37E1D52C07C00EA41F9 /* Item.swift in Sources */,
 				BCA4D35B1D52B6BA00EA41F9 /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +496,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA4D37D1D52C07900EA41F9 /* DataProvider.swift in Sources */,
+				BCA4D37F1D52C07D00EA41F9 /* Item.swift in Sources */,
 				BCA4D3671D52B6BA00EA41F9 /* IntentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
