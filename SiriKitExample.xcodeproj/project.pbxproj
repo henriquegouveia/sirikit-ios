@@ -16,6 +16,7 @@
 		BC3D867B1D52A2750049FA0B /* SiriKitExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3D867A1D52A2750049FA0B /* SiriKitExampleUITests.swift */; };
 		BC3D868B1D52A50C0049FA0B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3D868A1D52A50C0049FA0B /* Item.swift */; };
 		BC3D868D1D52A59E0049FA0B /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3D868C1D52A59E0049FA0B /* DataProvider.swift */; };
+		BC5983221D56D661007A9F7D /* BuyMessageIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5983211D56D661007A9F7D /* BuyMessageIntent.swift */; };
 		BCA4D35B1D52B6BA00EA41F9 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA4D35A1D52B6BA00EA41F9 /* IntentHandler.swift */; };
 		BCA4D3641D52B6BA00EA41F9 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA4D3631D52B6BA00EA41F9 /* IntentsUI.framework */; };
 		BCA4D3671D52B6BA00EA41F9 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA4D3661D52B6BA00EA41F9 /* IntentViewController.swift */; };
@@ -94,6 +95,7 @@
 		BC3D867C1D52A2750049FA0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC3D868A1D52A50C0049FA0B /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Model/Item.swift; sourceTree = "<group>"; };
 		BC3D868C1D52A59E0049FA0B /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataProvider.swift; path = DataProvider/DataProvider.swift; sourceTree = "<group>"; };
+		BC5983211D56D661007A9F7D /* BuyMessageIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyMessageIntent.swift; sourceTree = "<group>"; };
 		BCA4D3531D52B5C400EA41F9 /* SiriKitExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriKitExample.entitlements; sourceTree = "<group>"; };
 		BCA4D3581D52B6BA00EA41F9 /* SiriKitExampleIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriKitExampleIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA4D35A1D52B6BA00EA41F9 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				BCA4D35A1D52B6BA00EA41F9 /* IntentHandler.swift */,
 				BCA4D35C1D52B6BA00EA41F9 /* Info.plist */,
+				BC5983211D56D661007A9F7D /* BuyMessageIntent.swift */,
 			);
 			path = SiriKitExampleIntent;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5983221D56D661007A9F7D /* BuyMessageIntent.swift in Sources */,
 				BCA4D37C1D52C07900EA41F9 /* DataProvider.swift in Sources */,
 				BCA4D37E1D52C07C00EA41F9 /* Item.swift in Sources */,
 				BCA4D35B1D52B6BA00EA41F9 /* IntentHandler.swift in Sources */,
