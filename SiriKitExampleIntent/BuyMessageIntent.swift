@@ -70,7 +70,7 @@ class BuyMessageIntent: INExtension, INSendMessageIntentHandling {
     func confirm(sendMessage intent: INSendMessageIntent, completion: (INSendMessageIntentResponse) -> Void) {
         // Verify user is authenticated and your app is ready to send a message.
 
-        let userActivity = NSUserActivity(activityType: "Deseja realmente comprar esse produto?")
+        let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendMessageIntent.self))
         let response = INSendMessageIntentResponse(code: .ready, userActivity: userActivity)
         completion(response)
     }
@@ -80,7 +80,7 @@ class BuyMessageIntent: INExtension, INSendMessageIntentHandling {
     func handle(sendMessage intent: INSendMessageIntent, completion: (INSendMessageIntentResponse) -> Void) {
         // Implement your application logic to send a message here.
 
-        let userActivity = NSUserActivity(activityType: "Deseja realmente comprar esse produto?")
+        let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendMessageIntent.self))
         let response = INSendMessageIntentResponse(code: .success, userActivity: userActivity)
         completion(response)
     }

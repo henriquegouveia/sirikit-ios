@@ -14,11 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.requestAuthorizationForSiriAccessTheApp()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.addVocabularyToSiri()
     }
 
     // MARK: Private Methods
@@ -35,5 +31,13 @@ class ViewController: UIViewController {
         }
     }
 
+    private func addVocabularyToSiri() {
+        DispatchQueue(label: "SiriVocabulary").async {
+            let contacts = NSOrderedSet(array: ["Atacadão"])
+
+            let vocabulary = INVocabulary.shared()
+            vocabulary.setVocabularyStrings(contacts, of: .contactName)
+        }
+    }
 }
 
