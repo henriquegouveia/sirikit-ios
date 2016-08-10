@@ -7,18 +7,37 @@
 //
 
 import UIKit
+import Intents
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.requestAuthorizationForSiriAccessTheApp()
+        self.addVocabularyToSiri()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK: Private Methods
+
+    private func requestAuthorizationForSiriAccessTheApp() {
+        if INPreferences.siriAuthorizationStatus() != .authorized{
+            INPreferences.requestSiriAuthorization { (INSiriAuthorizationStatus) in
+                if INSiriAuthorizationStatus == .authorized{
+                    print("Application Authorized")
+                }
+            }
+        } else {
+            print("We're already good")
+        }
     }
 
+    private func addVocabularyToSiri() {
+        DispatchQueue(label: "SiriVocabulary").async {
+            let contacts = NSOrderedSet(array: ["Atacadão"])
+
+            let vocabulary = INVocabulary.shared()
+            vocabulary.setVocabularyStrings(contacts, of: .contactName)
+        }
+    }
 }
 
